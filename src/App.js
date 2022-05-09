@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MainVid from './components/MainVid';
+import imageInSrc from './imageInSrc.webp';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{border:"solid 1px black",maxWidth:"100vw"}}>
+
+<h1 className="title red">My Favorite Video Game</h1>
+
+
+
+<img src={imageInSrc} alt="residentEvil2"style={{height:"300px"}}/>
+
+
+
+<img src="./imageInPublic.jpg"alt="residentEvil"style={{height:"300px"}}/ >
+
+</div>
+
+<MainVid/>
     </div>
   );
 }
